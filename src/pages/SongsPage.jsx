@@ -1,4 +1,4 @@
-import './SongsPage.css';
+import '../styles/SongsPage.css';
 import KeySongs from '../components/keySongs';
 import songData from "../song-data.json";
 
@@ -31,17 +31,17 @@ function SongsPage() {
         </p>
         
 
-        <KeySongs songsList={BbSongs} songKey={"Bb"}/>
+        <KeySongs songsList={BbSongs} songKey={"B♭"}/>
         <KeySongs songsList={BSongs} songKey={"B"}/>
         <KeySongs songsList={CSongs} songKey={"C"}/>
-        <KeySongs songsList={DbSongs} songKey={"Db"}/>
+        <KeySongs songsList={DbSongs} songKey={"D♭"}/>
         <KeySongs songsList={DSongs} songKey={"D"}/>
-        <KeySongs songsList={EbSongs} songKey={"Eb"}/>
+        <KeySongs songsList={EbSongs} songKey={"E♭"}/>
         <KeySongs songsList={ESongs} songKey={"E"}/>
         <KeySongs songsList={FSongs} songKey={"F"}/>
-        <KeySongs songsList={GbSongs} songKey={"Gb"}/>
+        <KeySongs songsList={GbSongs} songKey={"G♭"}/>
         <KeySongs songsList={GSongs} songKey={"G"}/>
-        <KeySongs songsList={AbSongs} songKey={"Ab"}/>
+        <KeySongs songsList={AbSongs} songKey={"A♭"}/>
         <KeySongs songsList={ASongs} songKey={"A"}/>
 
       </header>

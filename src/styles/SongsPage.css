@@ -13,17 +13,21 @@
 }
 
 #app-header {
+  font-family: inkpen2;
+  font-weight: 100;
   animation-name: slide;
   animation-duration: 0.7s;
 }
 
 #site-description {
-  font-size: calc(10px + 1.2vmin);
+  font-size: calc(10px + 2vmin);
+  font-family: inkpen2;
+  font-weight: 100;
   width: 50vw;
   text-align: center;
 
   animation-name: slide;
-  animation-duration: 0.85s;
+  animation-duration: 0.9s;
   margin-top: 0;
 }
 
@@ -34,4 +38,9 @@
   to {
     opacity: 100%; margin-left: 0%;
   }
+}
+
+@font-face {
+  font-family: inkpen2;
+  src: url(inkpen2-script-regular.ttf);
 }

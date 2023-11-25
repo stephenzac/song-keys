@@ -1,4 +1,4 @@
-import "./keySongs.css";
+import "../styles/keySongs.css";
 
 
 function KeySongs(props) {
