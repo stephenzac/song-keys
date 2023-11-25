@@ -1,10 +1,10 @@
 // import logo from './logo.svg';
-import './App.css';
+import './SongsPage.css';
 import KeySongs from '../components/keySongs';
 import songData from "../song-data.json";
 
 
-function App() {
+function SongsPage() {
 
   let BbSongs = songData["Bb"];
   let BSongs = songData["B"];
@@ -42,4 +42,4 @@ function App() {
 
 }
 
-export default App;
+export default SongsPage;
