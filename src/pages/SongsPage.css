@@ -14,7 +14,7 @@
 
 #app-header {
   animation-name: slide;
-  animation-duration: 0.5s;
+  animation-duration: 0.7s;
 }
 
 #site-description {
@@ -23,7 +23,7 @@
   text-align: center;
 
   animation-name: slide;
-  animation-duration: 0.5s;
+  animation-duration: 0.85s;
   margin-top: 0;
 }
 

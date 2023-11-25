@@ -6,6 +6,9 @@
     height: calc(100% - 30px);
 
     background-color: lightslategrey;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: center;
 }
 
