@@ -1,0 +1,18 @@
+.song-list {
+    font-size: calc(10px + 1vmin);
+    width: 50vw;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: calc(100% - 30px);
+
+    background-color: lightslategrey;
+    flex-direction: column;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.key-header {
+    display: flex;
+    /* justify-content: center; */
+}
