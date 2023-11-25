@@ -6,13 +6,9 @@
     height: calc(100% - 30px);
 
     background-color: lightslategrey;
-    flex-direction: column;
-    display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 
 .key-header {
     display: flex;
-    /* justify-content: center; */
 }

@@ -21,8 +21,19 @@ function SongsPage() {
 
   return (
     <div className="app">
-      <header className="app-header">
-        <h1>Song Keys</h1>
+      <header className="app-page">
+        <h1 id="app-header">Song Keys</h1>
+        <div style={{}}>
+          <p id="site-description">
+          A website to display the musical keys of songs that I've been curating.
+          When I listen to music, I like to figure out the key of the song in concert pitch.
+          Then, I use a Python script that calls the Spotify API, and stores the song information associated
+          with the musical key I provide, into a JSON file, which then gets displayed here.
+          Check out which songs I've figured out the key to! :)
+          </p>
+        </div>
+        
+
         <KeySongs songsList={BbSongs} songKey={"Bb"}></KeySongs>
         <KeySongs songsList={BSongs} songKey={"B"}></KeySongs>
         <KeySongs songsList={CSongs} songKey={"C"}></KeySongs>
