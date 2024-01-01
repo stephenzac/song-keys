@@ -1,22 +1,11 @@
 import '../styles/SongsPage.css';
-import KeySongs from '../components/keySongs';
+import SongsInKey from '../components/SongsInKey';
+import SongCount from '../components/SongCount';
 import songData from "../song-data.json";
+import { Grid } from '@mui/material';
 
 
 function SongsPage() {
-
-  let BbSongs = songData["Bb"];
-  let BSongs = songData["B"];
-  let CSongs = songData["C"];
-  let DbSongs = songData["Db"];
-  let DSongs = songData["D"];
-  let EbSongs = songData["Eb"];
-  let ESongs = songData["E"];
-  let FSongs = songData["F"];
-  let GbSongs = songData["Gb"];
-  let GSongs = songData["G"];
-  let AbSongs = songData["Ab"];
-  let ASongs = songData["A"];
 
   return (
     <div className="app">
@@ -29,20 +18,30 @@ function SongsPage() {
           with the musical key I provide, into a JSON file, which then gets displayed here.
           Check out which songs I've figured out the key to! :)
         </p>
+
+        <SongCount songData={songData}></SongCount>
         
 
-        <KeySongs songsList={BbSongs} songKey={"B♭"}/>
-        <KeySongs songsList={BSongs} songKey={"B"}/>
-        <KeySongs songsList={CSongs} songKey={"C"}/>
-        <KeySongs songsList={DbSongs} songKey={"D♭"}/>
-        <KeySongs songsList={DSongs} songKey={"D"}/>
-        <KeySongs songsList={EbSongs} songKey={"E♭"}/>
-        <KeySongs songsList={ESongs} songKey={"E"}/>
-        <KeySongs songsList={FSongs} songKey={"F"}/>
-        <KeySongs songsList={GbSongs} songKey={"G♭"}/>
-        <KeySongs songsList={GSongs} songKey={"G"}/>
-        <KeySongs songsList={AbSongs} songKey={"A♭"}/>
-        <KeySongs songsList={ASongs} songKey={"A"}/>
+        <Grid
+          container
+          rowSpacing={5}
+        >
+          {Object.entries(songData).map((songInfo) => {
+            const songKeyProp = songInfo[0];
+            const songsListProp = songInfo[1];
+            return (
+              <Grid
+                container 
+                item xs={6}
+                direction="column"
+                alignItems="center"
+              >
+                <SongsInKey key={songKeyProp} songKey={songKeyProp} songsList={songsListProp}/>
+              </Grid>
+              )
+          })}
+        </Grid>
+        
 
       </header>
     </div>

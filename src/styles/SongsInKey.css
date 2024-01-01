@@ -1,0 +1,32 @@
+/*
+Inkpen2 font from: https://fontsgeek.com/fonts/Inkpen2-Script-Regular
+*/
+
+.song-list {
+    /* display: flex; */
+    font-size: calc(10px + 2vmin);
+    /* font-family: inkpen2; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    width: 35vw;
+    height: calc(100% - 30px);
+
+    background-color: rgb(76, 87, 97);
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(224, 224, 224);
+}
+
+.key-header {
+    font-family: inkpen2;
+    font-weight: 100;
+    display: flex;
+    color: rgb(224, 224, 224);
+}
+
+@font-face {
+    font-family: inkpen2;
+    src: url(inkpen2-script-regular.ttf);
+}
+  
